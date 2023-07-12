@@ -2,17 +2,13 @@
 import MenuBarSide from '@/components/MenuBarSide';
 // Styles
 import './globals.css';
-
+// Metadata
 export const metadata = {
     title: 'Twitter - Clone',
     description: 'Twitter clone project',
 };
-
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+// Layout
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <html lang="ko">
             <body>
@@ -25,4 +21,6 @@ export default function RootLayout({
             </body>
         </html>
     );
-}
+};
+// Export
+export default RootLayout;
