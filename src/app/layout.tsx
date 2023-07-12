@@ -1,3 +1,6 @@
+// Components
+import MenuBarSide from '@/components/MenuBarSide';
+// Styles
 import './globals.css';
 
 export const metadata = {
@@ -13,9 +16,11 @@ export default function RootLayout({
     return (
         <html lang="ko">
             <body>
-                <div>
-                    <header>header</header>
-                    <main>{children}</main>
+                <div id="root">
+                    <header role="banner">
+                        <MenuBarSide />
+                    </header>
+                    <main role="main">{children}</main>
                 </div>
             </body>
         </html>
